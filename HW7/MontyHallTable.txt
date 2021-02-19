@@ -1,0 +1,10 @@
+Door 1  Door 2  Door 3   |       outcome             outcome
+                          |   stay with Door 1      switch doors
+ -------------------------|--------------------------------------
+ car     goat    goat     | win                   lose
+ goat     car    goat     | lose                  win
+ goat    goat    car      | lose                  win
+ ----------------------------------------------------------------
+
+
+Explanation: The car has to be behind one of the doors and at the beginning of the game the probability of the car to be behind any of the three doors is 1/3 because at first each door is equally likely. For the "stay strategy", I don't change by door throughout the whole game so the probability of the car being behind my first choice is still the same as it was at the beginning, 1/3, because I did not move. For the "switch strategy", the host opens a door that I have not chosen nor that has a car behind it. Thus, the host opens a door which has a goat behind it. This action my the host has not changed the probability that my first choice door has a car behind it, but it does change the probability that the other door (which we do not know) has a car behind it. Now that the host has opened the door, the probability there is a car behind one of the three doors is still 100% but my first choice door is only 33.3% and the door he showed us is 0% (because he showed us a goat). This means that the other door now has a probability of 66.7%. In the "switch strategy", I shift my choice to the other door so now I have gained an extra 33.3% chance of having a car behind my door. Thus, I conclude that the probability of winning by using the "stay strategy" is 1/3 and the probability of winning by the "switch strategy" is 2/3. So you should use the "switch strategy".
